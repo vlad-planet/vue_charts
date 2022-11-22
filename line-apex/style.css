@@ -1,0 +1,40 @@
+.chart-nav {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.chart-nav button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 36px;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 160px;
+}
+.chart-nav button:nth-child(1) {
+  background-color: #E63946;
+}
+.chart-nav button:nth-child(2) {
+  background-color: #3A3042;
+}
+.chart-nav button:nth-child(3) {
+  background-color: #B8B42D;
+}
+.chart-nav button:nth-child(4) {
+  background-color: #F7B32B;
+}
+.chart-nav button:nth-child(5) {
+  background-color: #6DAEDB;
+}
+.chart-nav button:nth-child(6) {
+  background-color: #006BA6;
+}
+.chart-nav button.in-active {
+  background-color: #ddd;
+}
+
+.chart-container {
+  height: 460px;
+}

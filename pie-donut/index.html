@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pie Chart (Donut)</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+    <graph-pie
+            :width="500"
+            :height="500"
+            :padding-top="75"
+            :padding-right="75"
+            :padding-bottom="75"
+            :padding-left="75"
+            :values="values"
+            :names="names"
+            :active-index="[ 0, 2 ]"
+            :active-event="'click'"
+            :show-text-type="'outside'"
+            :data-format="dataFormat"
+            :shape="'donut'"
+            :show-total-value="true">
+        <note :text="'Donut Chart'"></note>
+        <legends :names="names"></legends>
+        <tooltip :names="names"></tooltip>
+    </graph-pie>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue-graph@0.5.4/dist/vue-graph.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

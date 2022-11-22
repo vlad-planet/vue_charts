@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Line Chart</title>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+    <graph-line
+            :width="1200"
+            :height="400"
+            :shape="'normal'"
+            :axis-min="0"
+            :axis-max="50"
+            :axis-full-mode="true"
+            :labels="[ '1Q', '2Q', '3Q', '4Q' ]"
+            :names="names"
+            :values="values">
+        <note :text="'Line Chart'"></note>
+        <tooltip :names="names" :position="'right'"></tooltip>
+        <legends :names="names"></legends>
+        <guideline :tooltip-y="true"></guideline>
+    </graph-line>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js'></script>
+<script src='https://cdn.rawgit.com/juijs/vue-graph/2216ae2f/dist/vue-graph.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
